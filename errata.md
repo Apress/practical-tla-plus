@@ -15,13 +15,7 @@ The range operator expression says that evaluating `1..3` will output **`{1, 2, 
 
 On **page 28** [Wrong expression]:
  
-Row five of the operator table says that **`>> <<1, 1, 1, 1>>`** will output `4`. The expression is missing the `Len` operator. The correct expression should be **`>> Len(<<1, 1, 1, 1)`**
-
-***
-
-On **page 27** [Wrong result for expression]:
- 
-The range operator expression says that evaluating `1..3` will output **`{1, 2, 3}`**. TLC will instead represent it as `1..3`. A more correct expression would be **`>> 1..3 = {1, 2, 3}`**, which would have value `TRUE`.
+Row five of the operator table says that **`>> <<1, 1, 1, 1>>`** will output `4`. The expression is missing the `Len` operator. The correct expression should be **`>> Len(<<1, 1, 1, 1>>)`**
 
 ***
 
