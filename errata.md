@@ -20,6 +20,13 @@ Row five of the operator table says that **`>> <<1, 1, 1, 1>>`** will output `4`
 ***
 
 
+On **page 35** [Wrong expression]:
+
+The `UNION` operator expression is missing a closing brace. The correct expression should be **`>> {{"a"}, {"b"}, {"b", "c"}}`**.
+
+***
+
+
 On **page 43** [Unmarked change]:
  
 The first three lines of the spec should be bolded.
