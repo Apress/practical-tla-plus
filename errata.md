@@ -28,6 +28,12 @@ A no-op. We can use this to ~~fill~~ represent parts of the spec that we haven't
 
 ***
 
+On **page 35** [Wrong expression]:
+
+The `UNION` operator expression is missing a closing brace. The correct expression should be **`>> {{"a"}, {"b"}, {"b", "c"}}`**.
+
+***
+
 
 On **page 43** [Unmarked change]:
  
