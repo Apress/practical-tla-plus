@@ -20,6 +20,14 @@ Row five of the operator table says that **`>> <<1, 1, 1, 1>>`** will output `4`
 ***
 
 
+On **page 30** [Typo]:
+ 
+**skip**
+
+A no-op. We can use this to ~~fill~~ represent parts of the spec that we haven't filled out yet or conditionals that don't update anything.
+
+***
+
 On **page 35** [Wrong expression]:
 
 The `UNION` operator expression is missing a closing brace. The correct expression should be **`>> {{"a"}, {"b"}, {"b", "c"}}`**.
