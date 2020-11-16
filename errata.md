@@ -26,6 +26,16 @@ On **page 30** [Typo]:
 
 A no-op. We can use this to ~~fill~~ represent parts of the spec that we haven't filled out yet or conditionals that don't update anything.
 
+On **page 33** [Formatting]:
+
+The entire `add_item` macro should be in bold.
+
+---
+
+On **page 34** [Addition]:
+
+The sentence "there are three basic ways to do this" should be followed by "two we'll cover now and one that makes up chapter 5."
+
 ***
 
 On **page 35** [Wrong expression]:
@@ -34,8 +44,14 @@ The `UNION` operator expression is missing a closing brace. The correct expressi
 
 ***
 
+On **page 37** [Wrong Operator]:
 
-On **page 43** [Unmarked change]:
+The text says "Since we'd be using `Append` instead of `Cardinality`. It should instead say "Since we'd be using `Len`".
+
+---
+
+
+On **page 43** [Formatting]:
  
 The first three lines of the spec should be bolded.
 
@@ -73,6 +89,12 @@ Do not instantiate instances of `Point` in the `Point` model itself.
 
 ***
 
+On **page 90** [Correction to Spec]:
+
+The spec at the start of the page should have `UseResources` as its only label, not `WaitForResources`. The spec at the end of the page should have `WaitForResources` in bold, being a renaming.
+
+---
+
 On **page 93** [Constant assignment mismatch]:
  
 If you follow the instructions in the `Symmetry Sets` box, you will have 3 symmetric actors in your model. The rest of the main text assumes you have 2 nonsymmetric actors.
@@ -82,3 +104,11 @@ If you follow the instructions in the `Symmetry Sets` box, you will have 3 symme
 On **page 115** [Missing import]:
  
 The spec for `max` says `EXTENDS Sequences`. It should be `EXTENDS Sequences,` **`Integers`**.
+
+---
+
+On **page 125** [Addition]:
+
+Adding the `NoOverflows` invariant will make the spec fail, as it's possible for `low` to overflow. See https://github.com/Apress/practical-tla-plus/issues/6.
+
+---
