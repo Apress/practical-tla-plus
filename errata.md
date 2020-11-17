@@ -63,6 +63,18 @@ The last expression on the page `>> {1, 2} - 2`, is an em-dash instead of a doub
 
 ***
 
+On **page 52** [Deprecation]:
+ 
+The line `CHOOSE <<x, y>> IN (-10..10) \X (-10..10)` uses the `CHOOSE <<a, b>>` syntax, which is now deprecated. The reader should instead do
+
+```
+>> CHOOSE x \in (-10..10) \X (-10..10):
+>>  /\ 2*x[1] + x[2] = -2
+>>  /\ 3*x[1] - 2*x[2] = 11
+```
+
+***
+
 On **page 66** [Missing step, operator]:
  
 The book adds constants to the knapsack spec but **does not** explicitly say to remove the corresponding operators. Additionally, we need to **update `ItemParams`**. The new definition is
@@ -101,9 +113,21 @@ If you follow the instructions in the `Symmetry Sets` box, you will have 3 symme
 
 ***
 
+On **page 101** [Incorrect Statement]:
+
+The tip says "for label `A:` in an unfair process, writing `A:+` will make it weakly fair." This is false. `A:+` will make a weakly fair label strongly fair, but not an unfair label weakly fair.
+
+---
+
 On **page 115** [Missing import]:
  
 The spec for `max` says `EXTENDS Sequences`. It should be `EXTENDS Sequences,` **`Integers`**.
+
+---
+
+On **page 121** [Simplification]:
+
+Defining `Pow2(n)` is unnecessary, as you can instead write `2^n`.
 
 ---
 
