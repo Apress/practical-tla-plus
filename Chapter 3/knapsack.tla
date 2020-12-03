@@ -19,7 +19,7 @@ KnapsackSize(sack, itemset) ==
   IN PT!ReduceSet(LAMBDA item, acc: size_for(item) + acc, Items, 0) 
 
 ValidKnapsacks(itemset) ==
-  {sack \in [Items -> 0..4]: KnapsackSize(sack, itemset) <= Capacity}
+  {sack \in [Items -> 0..4]: KnapsackSize(sack, itemset) <= CAPACITY}
 
 ValueOf(item) == HardcodedItemSet[item].value
 
