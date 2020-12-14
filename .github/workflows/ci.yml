@@ -1,0 +1,34 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install 
+        run: |
+          sudo apt update
+          sudo apt install -y curl make
+          curl -L -o /tmp/tlaps.bin https://github.com/tlaplus/tlapm/releases/download/v1.4.5/tlaps-1.4.5-x86_64-linux-gnu-inst.bin
+          chmod +x /tmp/tlaps.bin
+          sudo /tmp/tlaps.bin
+      - name: Validate
+        run: |
+          tlapm --summary Chapter\ 1/*.tla
+          tlapm --summary Chapter\ 2/*.tla
+          tlapm --summary Chapter\ 3/*.tla
+          #tlapm --summary Chapter\ 5/*.tla
+          #tlapm --summary Chapter\ 6/*.tla
+          tlapm --summary Chapter\ 7/*.tla
+          tlapm --summary Chapter\ 8/*.tla
+          tlapm --summary Chapter\ 9/*.tla
+          #tlapm --summary Chapter\ 10/*.tla
+          #tlapm --summary Chapter\ 11/*.tla
