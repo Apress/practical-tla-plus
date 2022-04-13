@@ -166,6 +166,19 @@ The section on `--fair algorithm` should note that making an algorithm globally 
 
 ---
 
+On **page 108** [Formatting]:
+
+The following code should be in bold:
+
+```
+EXTENDS TLC, Integers, Sequences
+\* CONSTANT Threads
+
+Threads == 1..2
+```
+
+---
+
 On **page 114** [Text Change]:
 
 The text should read "~~TLC~~ **The Pluscal Translator** will create a constant `DefaultInitValue`..."
